@@ -1,0 +1,18 @@
+[user]
+    name = Adam Zapletal
+    email = adamzap@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[core]
+    excludesfile = /Users/adam/.gitignore
+[github]
+    user = adamzap
+    token = ??
+[alias]
+    st = status
+    one = log --oneline
+    co = checkout
+[push]
+    default = matching
