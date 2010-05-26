@@ -9,7 +9,7 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY
 
-alias ls='ls -G'
+alias ls='ls --color'
 alias ll='ls -l'
 alias d='cd ~/Desktop'
 alias p='cd ~/Projects'
