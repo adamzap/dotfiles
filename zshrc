@@ -11,6 +11,7 @@ setopt EXTENDED_HISTORY
 
 alias ls='ls --color'
 alias ll='ls -l'
+alias grep='grep --color=auto'
 alias d='cd ~/Desktop'
 alias p='cd ~/Projects'
 alias dh='ssh adamzaps@adamzap.com'
