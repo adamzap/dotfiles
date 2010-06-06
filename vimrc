@@ -43,4 +43,7 @@ filetype indent on
 
 let Tlist_Ctags_Cmd='/opt/local/bin/ctags'
 
+au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+au FileType dat exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+
 "au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
