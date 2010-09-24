@@ -83,6 +83,8 @@ hi CursorLine     guibg=#222222 gui=none
 " Line number.
 "hi LineNr         ctermfg=DarkMagenta ctermbg=black  guifg=#4682b4 guibg=#000000 gui=bold
 hi LineNr         ctermfg=DarkMagenta ctermbg=black  guifg=#213d54 guibg=#000000 gui=none
+"hi ColorColumn ctermbg=DarkMagenta guibg=#213d54 gui=none
+hi ColorColumn guibg=#2d2d2d ctermbg=236
 
 " Normal colour: just white thank you.
 hi Normal         guifg=#ffffff guibg=#000000 gui=none
