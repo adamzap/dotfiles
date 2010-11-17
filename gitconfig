@@ -14,5 +14,6 @@
     st = status
     one = log --oneline
     co = checkout
+    tree = log --oneline --decorate --graph
 [push]
     default = matching
