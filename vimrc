@@ -27,7 +27,8 @@ set foldlevel=200                   "start with all folds open
 set bg=dark
 set ruler
 set list
-set listchars=tab:>-,trail:_ list   "list trailing characters
+"set listchars=tab:>-,trail:_ list   "list trailing characters
+set listchars=tab:▸\ ,trail:·,nbsp:· list "list trailing characters
 set number                          "line numbers
 set visualbell                      "audio bell is evil
 set showmatch                       "blink matching bracket, etc
@@ -49,7 +50,7 @@ set modelines=0
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-"set colorcolumn=80
+set colorcolumn=80
 set autoindent                      "copy indent level on new lines
 set shiftround                      "round indents to sw
 set hidden                          "protect my buffers
@@ -78,7 +79,7 @@ let Tlist_Ctags_Cmd='/opt/local/bin/ctags'
 map <leader>n :NERDTreeToggle<cr>
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 
-au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+"au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 au FileType xsd exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 au FileType dat exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
@@ -86,4 +87,6 @@ command! W :w
 
 cmap w!! w !sudo tee % >/dev/null
 
-color neverness
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+color molokai
